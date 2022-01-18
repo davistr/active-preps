@@ -5,11 +5,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import Bulma CSS framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Active Preps</title>
 </head>
 
 <body>
+    <section class="hero is-small">
+        <div class="hero-body">
+            <p class="title">
+                Active Preps
+            </p>
+            <p class="subtitle">
+                Simplifying meal preps
+            </p>
+        </div>
+    </section>
+
+    <div class="block">
+        <h1 class="title is-4">
+            Let's calculate your BMI to help customize preps for your goals!
+        </h1>
+    </div>
+
+    <div class="container is-max-desktop block">
+        <h1 class="title is-5">Tell us about yourself!</h1>
+    </div>
+    <div class="column is-one-third">
+        <div class="block">
+            <div class="box">
+                <form id="bmi-form">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Height</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <label for="feet"></label>
+                                <input class="input" name="feet" id="feet" type="text" placeholder="Feet">
+                            </div>
+                            <div class="field">
+                                <label for="inches"></label>
+                                <input class="input" name="inches" id="inches" type="text" placeholder="Inches">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Weight (lbs)</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <label for="weight"></label>
+                                <input class="input" name="weight" id="weight" type="text" placeholder="Weight">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block has-text-centered">
+                        <button class="button is-outlined">Get Started!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="./assets/js/script.js"></script>
 </body>
 

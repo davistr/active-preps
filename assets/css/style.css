@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #82E0AA;
+}
+
+.hero {
+    background-color: var(--primary-color);
+    padding: 22px;
+    margin-bottom: 20px;
+}
