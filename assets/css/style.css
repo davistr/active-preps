@@ -7,3 +7,25 @@
     padding: 22px;
     margin-bottom: 20px;
 }
+
+.hero.has-background {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-background.is-transparent {
+    opacity: 0.5;
+}
+
+.title {
+    /* color: var(--primary-color); */
+    font-size: 22px;
+}
