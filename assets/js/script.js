@@ -37,19 +37,6 @@ var getBMI = function (weight, height) {
 };
 
 
-var getMealData = function () {
-
-    fetch("https://api.spoonacular.com/recipes/findByIngredients?ingredients=apiKey=c62b70b1d026480f8c5a5b248bec1b0a").then(function (response) {
-
-        console.log(response);
-        response.json().then(function (data) {
-            console.log(data);
-
-        });
-    });
-};
-
-
 // display BMI
 var displayBMI = function (data) {
 

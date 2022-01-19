@@ -31,6 +31,22 @@
     opacity: 0.5;
 }
 
+/* #dashboard-hero {
+    position: absolute;
+    left: 0;
+    top: 0; 
+    background-size: cover;
+    background-position: fit;
+    width: 50%;
+    height: 100%;
+}
+
+#dashboard-bg {
+    position: relative;
+    overflow: hidden;
+} */
+
+
 .title {
     /* color: var(--primary-color); */
     font-size: 22px;
