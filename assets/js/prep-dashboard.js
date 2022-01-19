@@ -7,9 +7,9 @@ var userMealInputEl = document.querySelector("#meals-container");
 var ingredientsArray = [];
 
 
-
+// fetch recipes by ingredients
 var getUserMeals = function () {
-    fetch("https://api.spoonacular.com/recipes/random?apiKey=c62b70b1d026480f8c5a5b248bec1b0a&number=50").then(function (response) {
+    fetch("https://api.spoonacular.com/recipes/findByIngredients?apiKey=c62b70b1d026480f8c5a5b248bec1b0a&").then(function (response) {
 
         console.log(response);
         response.json().then(function (data) {
@@ -22,7 +22,7 @@ var getUserMeals = function () {
     });
 };
 
-
+// get 50 random meals from call
 var getRandomMeals = function () {
 
     fetch("https://api.spoonacular.com/recipes/random?apiKey=c62b70b1d026480f8c5a5b248bec1b0a&number=50").then(function (response) {
@@ -56,6 +56,8 @@ var displayUserMeals = function (data) {
 
 var displayRandomMeals = function (data) {
 
+
+
     for (var i = 0; i < 3; i++) {
 
         var max = 49;
@@ -77,6 +79,7 @@ var displayRandomMeals = function (data) {
         randomMealInputEl.appendChild(randomMealEl);
         randomMealInputEl.appendChild(linkBtn);
 
+        // randomMealEl.innerHTML = "";
     }
 
 };

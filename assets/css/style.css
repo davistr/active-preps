@@ -2,6 +2,10 @@
     --primary-color: #82E0AA;
 }
 
+/* body {
+    max-height: 100vh;
+} */
+
 .hero {
     /* background-color: var(--primary-color); */
     padding: 22px;
@@ -15,9 +19,11 @@
 
 .hero-background {
     position: absolute;
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
+    left: 0;
+    top: 0; 
+    background-size: cover;
+    background-position: fit;
+    width: 50%;
     height: 100%;
 }
 
@@ -28,6 +34,11 @@
 .title {
     /* color: var(--primary-color); */
     font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 3px solid;
+    border-color: hsl(171, 100%, 41%);
+    padding-bottom: 12px;
 }
 
 img {
@@ -41,3 +52,16 @@ img {
     padding: 12px;
     box-shadow: 0 4px 8px 4px rgba(77, 77, 77, 0.20);
 }
+
+#about-us {
+    text-align: center;
+    font-size: 22px;
+}
+
+
+.button {
+    margin-top: 12px;
+}
+/* .link-btn {
+
+} */
