@@ -25,7 +25,7 @@ var getUserMeals = function () {
 // get 50 random meals from call
 var getRandomMeals = function () {
 
-    fetch("https://api.spoonacular.com/recipes/random?apiKey=eb288112c5b6408fb3559fb3b986a947&number=50").then(function (response) {
+    fetch("https://api.spoonacular.com/recipes/random?apiKey=eb288112c5b6408fb3559fb3b986a947&number=100").then(function (response) {
 
         console.log(response);
         response.json().then(function (data) {
