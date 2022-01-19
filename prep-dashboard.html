@@ -12,7 +12,41 @@
 </head>
 
 <body>
-    <section class="hero is-small">
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="./index.html">
+                <img src="./images/logo.jpg" width="112" height="32">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    About Us
+                </a>
+
+                <a class="navbar-item">
+                    Get Started
+                </a>
+
+                <a class="navbar-item">
+                    Contact Us
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero is-small is-primary">
         <div class="hero-body">
             <p class="title">
                 Active Preps
@@ -22,6 +56,51 @@
             </p>
         </div>
     </section>
+
+    <div class="container column-is-full">
+        <div class="block">
+            <div class="box">
+                <h1 class="title is-3">
+                    Please list your desired ingredients (don't forget to check your pantry!):
+                </h1>
+                <textarea class="textarea is-primary is-medium"
+                    placeholder="Enter ingredients here seperated by commas"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- section for meals generate by user ingredients -->
+    <section class="section">
+        <div class="container">
+            <div class="columns" id="meals-container">
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container column is-full">
+        <div class="block">
+            <h1 class="title is-4">
+                Tired of the same old thing?
+            </h1>
+            <button onclick="getRandomMeals()" class="button is-outlined is-primary" id="random-btn">Click her for some
+                inspiration!</button>
+        </div>
+    </div>
+
+    <!-- section for random meals -->
+    <section class="section">
+        <div class="container">
+            <div class="columns" id="random-container">
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+
+
+    <script src="./assets/js/prep-dashboard.js"></script>
 </body>
 
 </html>

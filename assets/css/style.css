@@ -3,7 +3,7 @@
 }
 
 .hero {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     padding: 22px;
     margin-bottom: 20px;
 }
@@ -28,4 +28,16 @@
 .title {
     /* color: var(--primary-color); */
     font-size: 22px;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    box-shadow: 0 4px 8px 4px rgba(77, 77, 77, 0.20);
 }
