@@ -10,6 +10,8 @@ This application was built to assist user in obtained recipes based on their ing
 
 ## Screenshot:
 
+## API:
+Spoonacular
 
 ## Website
 https://davistr.github.io/active-preps/
