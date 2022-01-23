@@ -29,15 +29,15 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">
+                <a href="#About" class="navbar-item">
                     About Us
                 </a>
 
-                <a class="navbar-item">
+                <a href="#Started" class="navbar-item">
                     Get Started
                 </a>
 
-                <a class="navbar-item">
+                <a href="#Contact" class="navbar-item">
                     Contact Us
                 </a>
 
@@ -59,7 +59,7 @@
             <div class="columns">
                 <div class="column is-one-half">
                     <div class="block">
-                        <h1 class="title is-3 is-primary">
+                        <h1 class="title is-3 is-primary" id="About">
                             About Us
                         </h1>
                         <p id="about-us">
@@ -73,7 +73,7 @@
 
                 <div class="column is-one-half">
                     <div class="block">
-                        <h1 class="title is-3 is-primary">Get Started</h1>
+                        <h1 class="title is-3 is-primary" id="Started">Get Started</h1>
                         <div class="column is-full">
                             <div class="block">
                                 <p>Let's calculate your BMI to get started!</p>
@@ -146,8 +146,18 @@
 
     <!-- footer-->>
     <footer class="footer">
-        <div class="content has-text-centered">
-
+        <div class="content has-text-centered" id="Contact">
+                <h4>Contact Us!</h4>
+                <p>Have any questions or concerns?</p>
+                <form>
+                    <label for="fname">Full name</label>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="Tphone">Telephone number</label>
+                    <input type="text" id="Tphone" name="Tphone"><br>
+                    <input type="submit" value="Submit">
+                </form>
         </div>
     </footer>
 
