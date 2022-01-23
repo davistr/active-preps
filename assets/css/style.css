@@ -67,6 +67,13 @@ img {
     flex-direction: column;
     padding: 12px;
     box-shadow: 0 4px 8px 4px rgba(77, 77, 77, 0.20);
+    margin: 2px 4px;
+    text-align: center;
+}
+
+a {
+    display: block;
+    text-align: center;
 }
 
 #about-us {
@@ -74,10 +81,14 @@ img {
     font-size: 22px;
 }
 
-
 .button {
     margin-top: 12px;
 }
-/* .link-btn {
 
-} */
+.link {
+    text-decoration: none;
+    background-color: hsl(171, 100%, 41%);
+    color: white;
+    width: fit-content;
+    padding: 8px 12px;
+}

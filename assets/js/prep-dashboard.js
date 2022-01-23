@@ -4,8 +4,15 @@ var randomRecipeBtn = document.querySelector("#random-btn");
 var randomMealInputEl = document.querySelector("#random-container");
 var userMealInputEl = document.querySelector("#meals-container");
 
+
+var ingredientList = String(document.getElementById('ingredients')).value;
 var ingredientsArray = [];
 
+// for (var i = 0; i < ingredientList.length; i++) {
+//     if (ingredientList[i] != "") {
+//         ingredientsArray.push(ingredientList[i]);
+//     }
+// }
 
 // fetch recipes by ingredients
 var getUserMeals = function () {
@@ -14,7 +21,8 @@ var getUserMeals = function () {
         console.log(response);
         response.json().then(function (data) {
             console.log(data);
-            displayUserMeals(data);
+            // displayUserMeals(data);
+
         })
             .catch(function (error) {
                 console.error(error);
@@ -30,6 +38,7 @@ var getRandomMeals = function () {
         console.log(response);
         response.json().then(function (data) {
             console.log(data);
+            randomMealInputEl.innerHTML = "";
             displayRandomMeals(data);
         })
             .catch(function (error) {
@@ -57,34 +66,23 @@ var displayUserMeals = function (data) {
 var displayRandomMeals = function (data) {
 
 
-
     for (var i = 0; i < 3; i++) {
 
         var max = 49;
         var position = Math.floor(Math.random() * (max + 1));
 
         var randomMealEl = document.createElement('card');
-        randomMealEl.className = 'box';
+        randomMealEl.className = 'card';
 
-        // create anchor for recipe link
-        var linkBtn = document.createElement('a');
-
-        // var test = data;
-        // console.log(test);
-        randomMealEl.innerHTML = data.recipes[position].title + "<br />" + "<img src=\"" + data.recipes[position].image + "\">" + "<br />" +
+        randomMealEl.innerHTML = "<span style='font-size:16px; font-weight:bold; padding-bottom:4px'>" + data.recipes[position].title +
+            "</span>" + "<br />" + "<img src=\"" + data.recipes[position].image + "\">" + "<br />" +
             "Preparation Time: " + data.recipes[position].readyInMinutes + "<br />" + "Number of Servings: "
-            + data.recipes[position].servings + "<br />" + "<a class='link-btn' href= " + data.recipes[position].sourceUrl + "></a>";
+            + data.recipes[position].servings + "<br />" + "<a class='link' target='_blank' href=" + data.recipes[position].sourceUrl + ">Go To Recipe!</a>";
 
-        randomMealInputEl.setAttribute('style', 'margin:8px; padding:6px;');
+
         randomMealInputEl.appendChild(randomMealEl);
-        randomMealInputEl.appendChild(linkBtn);
 
-        // randomMealEl.innerHTML = "";
     }
 
 };
 
-
-
-// // event listener for button
-// randomRecipeBtn.addEventListener("click", getRandomMeals);
