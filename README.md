@@ -9,7 +9,7 @@ This application was built to assist user in obtained recipes based on their ing
 * Javascript
 
 ## Screenshot:
-
+![](images/site_screenshot.jpg)
 
 ## Website
 https://davistr.github.io/active-preps/
