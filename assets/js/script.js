@@ -21,7 +21,7 @@ var getBMI = function (weight, height) {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "body-mass-index-bmi-calculator.p.rapidapi.com",
-            "x-rapidapi-key": "a0c4d61318msh3af62e945a1311bp114257jsna58ed68645ac"
+            "x-rapidapi-key": "6ca066b00ff64e55be2c4aa976474cf0"
         }
     }).then(function (response) {
         console.log(response);
