@@ -23,7 +23,6 @@ var getUserMeals = function () {
         response.json().then(function (data) {
             console.log(data);
             displayUserMeals(data);
-            console.log(ingredientList);
 
         })
             .catch(function (error) {
